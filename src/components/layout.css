@@ -1,4 +1,4 @@
-html {
+/* html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -7,6 +7,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("https://source.unsplash.com/1600x900/?peru,lama");
 }
 article,
 aside,
@@ -619,4 +620,39 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+} */
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-image: url("https://sharebook-gifs.s3.ap-northeast-2.amazonaws.com/ataccama.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+
+.headerContainer {
+  /* height: 20%; */
+}
+
+.bodyContainer {
+  /* height: ; */
+}
+
+header {
+}
+main {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

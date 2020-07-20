@@ -1,0 +1,86 @@
+.headerContainer {
+  /* background-color: lightblue; */
+  margin: 0;
+  /* padding: 1.45rem 1.0875rem; */
+  padding: 1rem;
+  display: flex;
+}
+
+.headerLeftContainer {
+  flex: 1;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.headerLeftLogo {
+  /* padding: 8px 12px; */
+  width: 50px;
+}
+
+.headerLeftTitle {
+  padding: 8px 12px;
+}
+
+.headerLeftTitle :hover {
+  opacity: 0.4;
+}
+
+.headerRightContainer {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.headerRightTitleContainer {
+  display: flex;
+  flex: 1;
+  /* justify-content: space-between; */
+  text-align: center;
+}
+
+.headerRightTitle-1 {
+  flex: 1;
+  padding: 8px 12px;
+}
+
+.headerRightTitle-2 {
+  padding: 8px 12px;
+  flex: 1;
+}
+
+.headerRightTitle-3 {
+  padding: 8px 12px;
+  flex: 1;
+}
+
+.headerRightTitle-4 {
+  padding: 8px 12px;
+  flex: 1;
+}
+
+.headerRightTitle-5 {
+  padding: 8px 12px;
+  flex: 1;
+}
+
+.headerRightTitle-1 :hover {
+  opacity: 0.4;
+}
+
+.headerRightTitle-2 :hover {
+  opacity: 0.4;
+}
+
+.headerRightTitle-3 :hover {
+  opacity: 0.4;
+}
+
+.headerRightTitle-4 :hover {
+  opacity: 0.4;
+}
+
+.headerRightTitle-5 :hover {
+  opacity: 0.4;
+}
