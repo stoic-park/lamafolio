@@ -6,9 +6,7 @@ import SEO from "../components/seo"
 
 const Lama = () => (
   <Layout>
-    {/* <SEO title="Page two" /> */}
     <h1>Lama</h1>
-    <Link to="/">Go back to the homepage</Link>
   </Layout>
 )
 
