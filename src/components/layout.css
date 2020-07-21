@@ -627,11 +627,31 @@ body {
   height: 100%;
 }
 
+a {
+  text-decoration: none;
+  /* color: rgb(177, 196, 212); */
+  color: aliceblue;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:focus {
+  text-decoration: none;
+}
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
 body {
   margin: 0;
   background-image: url("https://sharebook-gifs.s3.ap-northeast-2.amazonaws.com/ataccama.jpg");
   background-size: cover;
   height: 100vh;
+  /* color: aliceblue; */
 }
 
 .headerContainer {
@@ -645,7 +665,7 @@ body {
 header {
 }
 main {
-  height: 70vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;

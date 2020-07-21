@@ -5,6 +5,13 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import styled from "styled-components"
+import "./index.css"
+
+// react-icons
+import { FaGithub } from "react-icons/fa"
+import { FaMedium } from "react-icons/fa"
+import { MdEmail } from "react-icons/md"
+import { FaFilePdf } from "react-icons/fa"
 
 const H1 = styled.h1`
   color: goldenrod;
@@ -17,8 +24,35 @@ const H1 = styled.h1`
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Welcome To LamaGround</h1>
-
+    <div className="homeContainer">
+      <div className="homeLeftContainer">
+        <div className="homeTextContainer">
+          <h1>Welcome To LamaGround</h1>
+          <h1>코드와 사람을 잇다</h1>
+          <h1>박성택</h1>
+          <h2>FRONTEND DEVELOPER</h2>
+        </div>
+        <ul className="homeLinkContainer">
+          <li>
+            <Link to="http://bitly.kr/YspLJtlIKzB" target="_blank">
+              <FaGithub size="32" />
+            </Link>
+          </li>
+          <li>
+            <Link to="http://bitly.kr/gbgN5IFJuCw" target="_blank">
+              <FaMedium size="32" />
+            </Link>
+          </li>
+          <li>
+            <MdEmail size="32" />
+          </li>
+          <li>
+            <FaFilePdf size="32" />
+          </li>
+        </ul>
+      </div>
+      <div className="homeRightContainer"></div>
+    </div>
     {/* <Link to="/page-2/">Go to page 2</Link> <br /> */}
   </Layout>
 )

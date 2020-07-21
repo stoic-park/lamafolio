@@ -10,75 +10,37 @@ const Header = ({ siteTitle }) => (
     <div className="headerLeftContainer">
       <img className="headerLeftLogo" src={lama} />
       <h1 className="headerLeftTitle">
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
+        <Link to="/">{siteTitle}</Link>
       </h1>
     </div>
     <div className="headerRightContainer">
-      <div className="headerRightTitleContainer">
-        <h2 className="headerRightTitle-1">
-          <Link
-            to="/about"
-            style={{
-              color: `white`,
-              textDecoration: `none`,
-            }}
-          >
-            About
+      <ul className="headerRightTitleContainer">
+        <li>
+          <Link to="/about">
+            <h2>About</h2>
           </Link>
-        </h2>
-        <h2 className="headerRightTitle-2">
-          <Link
-            to="/project"
-            style={{
-              color: `white`,
-              textDecoration: `none`,
-            }}
-          >
-            Project
+        </li>
+        <li>
+          <Link to="/project">
+            <h2>Project</h2>
           </Link>
-        </h2>
-        <h2 className="headerRightTitle-3">
-          <Link
-            to="/contact"
-            style={{
-              color: `white`,
-              textDecoration: `none`,
-            }}
-          >
-            Contact
+        </li>
+        <li>
+          <Link to="/contact">
+            <h2>Contact</h2>
           </Link>
-        </h2>
-        <h2 className="headerRightTitle-4">
-          <Link
-            to="/snack"
-            style={{
-              color: `white`,
-              textDecoration: `none`,
-            }}
-          >
-            Snack
+        </li>
+        <li>
+          <Link to="/snack">
+            <h2>Snack</h2>
           </Link>
-        </h2>
-        <h2 className="headerRightTitle-5">
-          <Link
-            to="/lama"
-            style={{
-              color: `white`,
-              textDecoration: `none`,
-            }}
-          >
-            Lama?
+        </li>
+        <li>
+          <Link to="/lama">
+            <h2>Lama?</h2>
           </Link>
-        </h2>
-      </div>
+        </li>
+      </ul>
     </div>
   </div>
 )

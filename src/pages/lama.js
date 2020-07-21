@@ -6,7 +6,13 @@ import SEO from "../components/seo"
 
 const Lama = () => (
   <Layout>
-    <h1>Lama</h1>
+    <div className="lamaConatainer">
+      <div>
+        <h1>Lama?</h1>
+        <h1>제가 라마를 좀 좋아라 합니다</h1>
+      </div>
+      <div>{/* 사진 */}</div>
+    </div>
   </Layout>
 )
 
