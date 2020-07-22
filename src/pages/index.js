@@ -44,10 +44,17 @@ const IndexPage = () => (
             </Link>
           </li>
           <li>
-            <MdEmail size="32" />
+            <a href="mailto:demige79@gmail.com">
+              <MdEmail size="32" />
+            </a>
           </li>
           <li>
-            <FaFilePdf size="32" />
+            <Link
+              to="https://sharebook-gifs.s3.ap-northeast-2.amazonaws.com/%EC%9D%B4%EB%A0%A5%EC%84%9C_%EB%B0%95%EC%84%B1%ED%83%9D.pdf"
+              target="_blank"
+            >
+              <FaFilePdf size="32" />
+            </Link>
           </li>
         </ul>
       </div>
