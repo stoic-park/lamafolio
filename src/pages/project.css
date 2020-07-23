@@ -1,58 +1,94 @@
+/* 참고 */
+/* https://codepen.io/rajeshuiux/pen/QWLrNmL */
+
 .projectContainer {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: block;
+}
+.row {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  /* align-items: center; */
-  /* height: 100%; */
+  align-items: center;
 }
 
-.cardContainer {
-  /* width: 30%; */
-  margin: 50px;
+.thumb-box {
+  display: flex;
+  max-width: 33.3333%;
+  margin: 0 15px;
+  position: relative;
+}
+
+.thumb-box a {
+  padding: 0;
+  position: relative;
+  width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  width: 20rem;
-  transform: scale(1);
-  transition: transform 5s ease;
+  z-index: 9997;
 }
 
-.cardContainer:hover {
-  box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.253) !important;
-  transform: scale(1.2);
-  /* transform: rotate(); */
-}
-.cardMedia {
-  /* flex: 1; */
-  height: 250px;
-  /* transform: scale(1); */
-  /* transition: transform 0.5s ease; */
-  /* overflow: hidden; */
-  /* overflow: visible; */
+.thumb-box img {
+  width: 100%;
+  height: 280px;
+  float: left;
 }
 
-.cardMedia:hover {
-  /* transform: scale(2.5); */
+.overlay-box {
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  z-index: 9998;
+  left: 0;
+  padding: 5%;
+  background-image: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(0, 0, 0, 0.75)
+  );
 }
 
-/* .card {
-  width: 20rem;
+.meta {
+  font-size: 14px;
+  display: block;
 }
 
-.card :hover {
-  box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.253) !important;
+.main-title {
+  font-size: 16px;
+  display: block;
+  font-weight: 700;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
 }
 
-.overflow {
+.description {
+  color: #ccc;
+  font-size: 13px;
+  margin-top: 5px;
+  display: block;
+  color: #ccc;
+  max-height: 0;
+  line-height: 18px;
   overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.4s ease-out, max-height 0.4s ease-out, margin 0.4s;
 }
 
-.card-img-top {
-  transform: scale(1);
-  transition: transform 0.5s ease;
+.projectButton {
+  color: #ccc;
 }
 
-.card-img-top:hover {
-  transform: scale(1.8);
-} */
+.thumb-box a:hover .description {
+  opacity: 1;
+  max-height: 100px;
+  margin-top: 5px;
+  transition: opacity 0.4s ease-out, max-height 0.9s ease-out;
+}
+
+.thumb-box a:hover .overlay-box {
+  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 1));
+}
+
+.thumb-box a:hover .projectButton {
+  opacity: 1;
+  max-height: 100px;
+  margin-top: 5px;
+  transition: opacity 0.4s ease-out, max-height 0.9s ease-out;
+}
