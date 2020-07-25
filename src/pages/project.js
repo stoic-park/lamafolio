@@ -18,9 +18,10 @@ let projects = []
 const Project = () => (
   <Layout>
     <div className="projectContainer">
-      <div className="row">
+      <div className="projectCardContainer">
         <div className="thumb-box">
-          <a href="">
+          {/* <a href=""> */}
+          <a>
             <img src="https://source.unsplash.com/1600x900/?lama&peru" alt="" />
             <span className="overlay-box">
               <span className="meta">Team Project</span>
@@ -35,7 +36,8 @@ const Project = () => (
         </div>
 
         <div className="thumb-box">
-          <a href="">
+          {/* <a href=""> */}
+          <a>
             <img src="https://source.unsplash.com/1600x900/?llama" alt="" />
             {/* <img src="https://sharebook-gifs.s3.ap-northeast-2.amazonaws.com/signUp.gif" alt="" /> */}
             <span className="overlay-box">
@@ -49,7 +51,8 @@ const Project = () => (
         </div>
 
         <div className="thumb-box">
-          <a href="">
+          {/* <a href=""> */}
+          <a>
             <img src="https://source.unsplash.com/1600x900/?lama" alt="" />
             <span className="overlay-box">
               <span className="meta">Solo Project</span>
