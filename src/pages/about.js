@@ -1,11 +1,11 @@
 import React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+// import SEO from "../components/seo"
 
 // material-ui & CSS
-import Button from "@material-ui/core/Button"
+// import Button from "@material-ui/core/Button"
 import "./about.css"
 
 const About = () => (

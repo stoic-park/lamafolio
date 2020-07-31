@@ -8,7 +8,7 @@ import lama from "../images/farm.png"
 const Header = ({ siteTitle }) => (
   <div className="headerContainer">
     <div className="headerLeftContainer">
-      <img className="headerLeftLogo" src={lama} />
+      <img className="headerLeftLogo" src={lama} alt="" />
       <h1 className="headerLeftTitle">
         <Link to="/">{siteTitle}</Link>
       </h1>

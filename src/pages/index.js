@@ -2,9 +2,9 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
+// import Image from "../components/image"
 import SEO from "../components/seo"
-import styled from "styled-components"
+// import styled from "styled-components"
 import "./index.css"
 
 // react-icons
@@ -13,13 +13,13 @@ import { FaMedium } from "react-icons/fa"
 import { MdEmail } from "react-icons/md"
 import { FaFilePdf } from "react-icons/fa"
 
-const H1 = styled.h1`
-  color: goldenrod;
-  a {
-    text-decoration: none;
-    color: coral;
-  }
-`
+// const H1 = styled.h1`
+//   color: goldenrod;
+//   a {
+//     text-decoration: none;
+//     color: coral;
+//   }
+// `
 
 const IndexPage = () => (
   <Layout>
