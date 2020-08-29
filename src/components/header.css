@@ -1,10 +1,12 @@
 .headerContainer {
   /* background-color: lightblue; */
+
+  background-color: #020d13;
   margin: 0;
   /* padding: 1.45rem 1.0875rem; */
   /* padding: 1rem; */
   display: flex;
-  /* color: aliceblue; */
+  height: 80%;
 }
 
 .headerLeftContainer {
@@ -17,12 +19,14 @@
 
 .headerLeftLogo {
   /* padding: 8px 12px; */
-  width: 50px;
+  /* color: aliceblue; */
+  width: 40px;
   padding-left: 50px;
 }
 
 .headerLeftTitle {
   padding: 8px 12px;
+  padding-left: 50px;
 }
 
 .headerLeftTitle :hover {

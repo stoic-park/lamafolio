@@ -40,7 +40,8 @@ const Layout = ({ children }) => {
       > */}
       <main>{children}</main>
       <footer style={{ color: `aliceblue` }}>
-        © {new Date().getFullYear()}, Built with &nbsp;
+        {/* <footer style={{ color: `#afc2cb` }}> */}©{" "}
+        {new Date().getFullYear()}, Built with &nbsp;
         <a href="https://github.com/stoic-park/">stoic-park</a>
       </footer>
       {/* </div> */}

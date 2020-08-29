@@ -1,7 +1,8 @@
-import React from "react"
+import React, { useState } from "react"
 // import { Link } from "gatsby"
 
 import Layout from "../components/layout"
+import ProjectList from "../components/ProjectList"
 // import SEO from "../components/seo"
 
 // material-ui
@@ -12,60 +13,52 @@ import Layout from "../components/layout"
 // import Button from "@material-ui/core/Button"
 // import Typography from "@material-ui/core/Typography"
 import "./project.css"
+// import { Link } from "gatsby"
 
-let projects = []
-
-const Project = () => (
-  <Layout>
-    <div className="projectContainer">
-      <div className="projectCardContainer">
-        <div className="thumb-box">
-          {/* <a href=""> */}
-          <a>
-            <img src="https://source.unsplash.com/1600x900/?lama&peru" alt="" />
-            <span className="overlay-box">
-              <span className="meta">Team Project</span>
-              <span className="main-title">ShareBook</span>
-              <span className="description">
-                지역 내 중고책 대여 모바일 서비스
-              </span>
-              <button className="projectButton">Detail</button>
-              <button className="projectButton">github</button>
-            </span>
-          </a>
-        </div>
-
-        <div className="thumb-box">
-          {/* <a href=""> */}
-          <a>
-            <img src="https://source.unsplash.com/1600x900/?llama" alt="" />
-            {/* <img src="https://sharebook-gifs.s3.ap-northeast-2.amazonaws.com/signUp.gif" alt="" /> */}
-            <span className="overlay-box">
-              <span className="meta">Team Project</span>
-              <span className="main-title">CheerLeader</span>
-              <span className="description">랜덤 응원메세지 웹 서비스</span>
-              <button className="projectButton">Detail</button>
-              <button className="projectButton">github</button>
-            </span>
-          </a>
-        </div>
-
-        <div className="thumb-box">
-          {/* <a href=""> */}
-          <a>
-            <img src="https://source.unsplash.com/1600x900/?lama" alt="" />
-            <span className="overlay-box">
-              <span className="meta">Solo Project</span>
-              <span className="main-title">LamaChat</span>
-              <span className="description">실시간 채팅 웹 서비스</span>
-              <button className="projectButton">Detail</button>
-              <button className="projectButton">github</button>
-            </span>
-          </a>
+function Project() {
+  const [projects, setProjects] = useState([
+    {
+      id: 1,
+      type: "Team Project",
+      title: "ShareBook",
+      description: "지역 내 중고책 대여 모바일 서비스",
+      github: "",
+      notion: "",
+      link: "",
+      images: [""],
+    },
+    {
+      id: 2,
+      type: "Team Project",
+      title: "CheerLeader",
+      description: "랜덤 응원 메세지 웹 서비스",
+      github: "",
+      notion: "",
+      link: "",
+      images: [],
+    },
+    {
+      id: 3,
+      type: "Solo Project",
+      title: "LamaChat",
+      description: "실시간 채팅 웹 서비스",
+      github: "",
+      notion: "",
+      link: "",
+      images: [],
+    },
+  ])
+  return (
+    <Layout>
+      <div className="projectContainer">
+        <div className="projectCardContainer">
+          {projects.map(project => (
+            <ProjectList key={project.id} project={project} />
+          ))}
         </div>
       </div>
-    </div>
-  </Layout>
-)
+    </Layout>
+  )
+}
 
 export default Project

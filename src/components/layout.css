@@ -631,6 +631,8 @@ a {
   text-decoration: none;
   /* color: rgb(177, 196, 212); */
   color: aliceblue;
+  /* color: #afc2cb; */
+  /* color: #01090e; */
 }
 a:visited {
   text-decoration: none;
@@ -663,7 +665,9 @@ body {
 }
 
 header {
+  height: 10vh;
 }
+
 main {
   height: 80vh;
   display: flex;
