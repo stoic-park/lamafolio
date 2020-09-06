@@ -1,9 +1,10 @@
 import React from "react"
 import { Link } from "gatsby"
+import Card from "@material-ui/core/Card"
 
 function ProjectList({ project }) {
   return (
-    <div className="thumb-box">
+    <Card className="thumb-box">
       <a>
         <img src="https://source.unsplash.com/1600x900/?lama&peru" alt="" />
         <span className="overlay-box">
@@ -18,7 +19,7 @@ function ProjectList({ project }) {
           </Link>
         </span>
       </a>
-    </div>
+    </Card>
   )
 }
 

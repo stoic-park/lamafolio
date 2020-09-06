@@ -4,7 +4,7 @@
 /* 이면가시성 */
 /* https://webdir.tistory.com/431 */
 
-.aboutContainer {
+/* .aboutContainer {
   display: flex;
   flex-direction: row;
   height: 100%;
@@ -22,34 +22,33 @@
   position: relative;
 }
 
+
 .aboutCard__side {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: #fff; */
+
   background-color: rgba(255, 255, 255, 0.5);
   height: 100%;
-  /* height: 52rem; */
+
   transition: all 0.8s ease;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  /* :😀 */
+
   -webkit-backface-visibility: hidden;
-  /* We don't want to see the back part of the element. */
-  /* :😀 */
+
   backface-visibility: hidden;
-  /* We don't want to see the back part of the element. */
+
   border-radius: 3px;
   overflow: hidden;
-  /* The image is overflowing the parent. */
+
   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.15);
 }
 
-/* :😀 */
 .aboutCard__side--Back {
-  /* background-color: #fff; */
+
   background-color: rgba(255, 255, 255, 0.5);
   transform: rotateY(180deg);
 }
@@ -58,4 +57,29 @@
 }
 .aboutCard:hover .aboutCard__side--Front {
   transform: rotateY(-180deg);
+} */
+
+/* 20.09.06 update */
+.aboutContainer {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  /* margin-left: 5%;
+  margin-right: 5%; */
+  /* margin: 5%; */
+}
+
+.aboutLeftContainer {
+  margin: 5%;
+  /* height: 100%; */
+  flex: 1;
+}
+
+.aboutRightContainer {
+  margin: 5%;
+  /* height: 100%; */
+  flex: 1;
 }

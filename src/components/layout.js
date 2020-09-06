@@ -27,6 +27,7 @@ const Layout = ({ children }) => {
   return (
     <>
       {/* <Navbar /> */}
+
       <header>
         <Header siteTitle={data.site.siteMetadata.title} />
       </header>
@@ -40,11 +41,13 @@ const Layout = ({ children }) => {
       > */}
       <main>{children}</main>
       <footer style={{ color: `aliceblue` }}>
-        {/* <footer style={{ color: `#afc2cb` }}> */}©{" "}
-        {new Date().getFullYear()}, Built with &nbsp;
-        <a href="https://github.com/stoic-park/">stoic-park</a>
+        <div className="footerEmptyBox"></div>
+        <div>
+          {/* <footer style={{ color: `#afc2cb` }}> */}©{" "}
+          {new Date().getFullYear()}, Built with &nbsp;
+          <a href="https://github.com/stoic-park/">stoic-park</a>
+        </div>
       </footer>
-      {/* </div> */}
     </>
   )
 }

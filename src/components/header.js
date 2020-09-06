@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 
 import "./header.css"
-import lama from "../images/farm.png"
+// import lama from "../images/farm.png"
 
 const Header = ({ siteTitle }) => (
   <div className="headerContainer">
@@ -25,21 +25,21 @@ const Header = ({ siteTitle }) => (
             <h2>Project</h2>
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link to="/contact">
             <h2>Contact</h2>
           </Link>
-        </li>
+        </li> */}
         <li>
           <Link to="/snack">
             <h2>Snack</h2>
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link to="/lama">
             <h2>Lama?</h2>
           </Link>
-        </li>
+        </li> */}
       </ul>
     </div>
   </div>
