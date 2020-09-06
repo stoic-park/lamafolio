@@ -61,6 +61,7 @@
 
 /* 20.09.06 update */
 .aboutContainer {
+  /* background-color: aqua; */
   display: flex;
   flex-direction: row;
   height: 100%;
@@ -69,17 +70,24 @@
   align-items: center;
   /* margin-left: 5%;
   margin-right: 5%; */
-  /* margin: 5%; */
+  margin: 5%;
 }
 
 .aboutLeftContainer {
+  background-color: rgba(8, 8, 8, 0.226);
   margin: 5%;
-  /* height: 100%; */
+  padding: 1%;
+  height: 70%;
   flex: 1;
+  color: aliceblue;
 }
 
 .aboutRightContainer {
+  background-color: rgba(8, 8, 8, 0.226);
   margin: 5%;
-  /* height: 100%; */
+  padding: 1%;
+
+  height: 70%;
   flex: 1;
+  color: aliceblue;
 }

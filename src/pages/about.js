@@ -56,46 +56,38 @@ const About = () => (
     </div> */}
     <div className="aboutContainer">
       <div className="aboutLeftContainer">
-        <Card>
+        <div>
           <CardContent>
-            <Typography color="textSecondary" gutterBottom>
+            <h1 variant="h3" color="textSecondary">
               About Me
-            </Typography>
-
-            <Typography color="textSecondary">adjective</Typography>
-            <Typography variant="body2" component="p">
-              well meaning and kindly.
-              <br />
-            </Typography>
-            <p>사람을 좋아하고 사람들이 좋아해주기를 바라는</p>
-            <p>혼자보다는 함께 무언가를 이루고 싶어하는</p>
-            <p>맡은 일은 무슨 일이 있어도 해야하고</p>
-            <p>부족하다는 것을 부끄럽게 여기기 보다는 성장의 기회로 삼는</p>
-            <p>나의 관점을 앞세우기보다도 상대방의 의견을 먼저 생각하는</p>
-            <p>깔끔한 디자인과 참신하고 재미있는 아이디어를 좋아하는</p>
-            <p>
+            </h1>
+            <h3>사람을 좋아하고 사람들이 좋아해주기를 바라는</h3>
+            <h3>혼자보다는 함께 무언가를 이루고 싶어하는</h3>
+            <h3>맡은 일은 무슨 일이 있어도 해야하고</h3>
+            <h3>부족하다는 것을 부끄럽게 여기기 보다는 성장의 기회로 삼는</h3>
+            <h3>나의 관점을 앞세우기보다도 상대방의 의견을 먼저 생각하는</h3>
+            <h3>깔끔한 디자인과 참신하고 재미있는 아이디어를 좋아하는</h3>
+            <h3>
               재미있는 아이디어를 기획부터 완성까지 하는 것을 너무나 좋아라 하는
-            </p>
-            <p>개발자입니다</p>
+            </h3>
+            <h3>꾸준히 성장하고 있는 개발자입니다</h3>
           </CardContent>
-        </Card>
+        </div>
       </div>
       <div className="aboutRightContainer">
-        <Card>
+        <div>
           <CardContent>
-            <Typography color="textSecondary" gutterBottom>
-              Skills & Tools
-            </Typography>
-
-            <Typography color="textSecondary">adjective</Typography>
-            <Typography variant="body2" component="p">
-              well meaning and kindly.
-              <br />
-            </Typography>
+            <h1 variant="h3">Skills & Tools</h1>
+            <h2 variant="h5">Languege</h2>
             <p>JavaScript</p>
+            <h2 variant="h5">Strong</h2>
             <p>React, React Native, Redux</p>
+            <h2 variant="h5">Experienced </h2>
+            <p>TypeScript, Socket.io, Node.js, MySQL ,AWS, Firebase, Heroku </p>
+            <h2 variant="h5">Tools</h2>
+            <p>Git, Notion, Slack, Ubuntu</p>
           </CardContent>
-        </Card>
+        </div>
       </div>
     </div>
   </Layout>
