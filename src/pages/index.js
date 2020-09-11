@@ -41,7 +41,7 @@ const IndexPage = () => (
           </li>
           <li>
             <span className="homeLinkTitle">medium</span>
-            <Link to="http://bitly.kr/gbgN5IFJuCw" target="_blank">
+            <Link to="https://bit.ly/2GH7o2e" target="_blank">
               <FaMedium size="32" />
             </Link>
           </li>
