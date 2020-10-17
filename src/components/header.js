@@ -16,6 +16,11 @@ const Header = ({ siteTitle }) => (
     <div className="headerRightContainer">
       <ul className="headerRightTitleContainer">
         <li>
+          <Link to="/">
+            <h2>Home</h2>
+          </Link>
+        </li>
+        <li>
           <Link to="/about">
             <h2>About</h2>
           </Link>
@@ -25,16 +30,16 @@ const Header = ({ siteTitle }) => (
             <h2>Project</h2>
           </Link>
         </li>
-        {/* <li>
+        <li>
           <Link to="/contact">
             <h2>Contact</h2>
           </Link>
-        </li> */}
-        <li>
+        </li>
+        {/* <li>
           <Link to="/snack">
             <h2>Snack</h2>
           </Link>
-        </li>
+        </li> */}
         {/* <li>
           <Link to="/lama">
             <h2>Lama?</h2>

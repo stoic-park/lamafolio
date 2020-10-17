@@ -4,11 +4,12 @@ import React, { useState } from "react"
 import styled from "styled-components"
 import NavbarLinks from "./NavbarLinks"
 import Logo from "./Logo"
+import { Link } from "gatsby"
 
 const Navigation = styled.nav`
   height: 10vh;
   display: flex;
-  background-color: #fff;
+  background-color: #020d13;
   position: relative;
   justify-content: space-between;
   text-transform: uppercase;
@@ -89,12 +90,12 @@ const Hamburger = styled.div`
     top: 10px;
   }
 `
-const Navbar = () => {
+const Navbar = ({ siteTitle }) => {
   const [navbarOpen, setNavbarOpen] = useState(false)
 
   return (
     <Navigation>
-      <Logo />
+      <Logo siteTitle={siteTitle} />
       <Toggle
         navbarOpen={navbarOpen}
         onClick={() => setNavbarOpen(!navbarOpen)}

@@ -14,7 +14,7 @@ const LogoWrap = styled.div`
   }
 `
 
-const Logo = () => {
+const Logo = ({ siteTitle }) => {
   const data = useStaticQuery(graphql`
     query {
       file(name: { eq: "gatsby-icon" }, extension: { eq: "png" }) {
@@ -28,7 +28,10 @@ const Logo = () => {
   `)
   return (
     <LogoWrap as={Link} to="/">
-      <Img fluid={data.file.childImageSharp.fluid} alt="logo" />
+      {/* <Img fluid={data.file.childImageSharp.fluid} alt="logo" /> */}
+      <h1>
+        <Link to="/">{siteTitle}</Link>
+      </h1>
     </LogoWrap>
   )
 }

@@ -6,7 +6,7 @@ import { Link } from "gatsby"
 
 const NavItem = styled(Link)`
   text-decoration: none;
-  color: #111;
+  color: white;
   display: inline-block;
   white-space: nowrap;
   margin: 0 1vw;
@@ -42,10 +42,10 @@ const NavItem = styled(Link)`
 const NavbarLinks = () => {
   return (
     <>
-      <NavItem to="/">About</NavItem>
-      <NavItem to="/404">Services</NavItem>
-      <NavItem to="/">Gallery</NavItem>
-      <NavItem to="/404">Contact</NavItem>
+      <NavItem to="/">Home</NavItem>
+      <NavItem to="/about">About</NavItem>
+      <NavItem to="/project">Project</NavItem>
+      <NavItem to="/contact">Contact</NavItem>
     </>
   )
 }
