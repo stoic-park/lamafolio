@@ -5,22 +5,31 @@
   /* max-width: 1140px; */
   /* margin: 0 auto; */
   /* display: block; */
-  display: flex;
-  flex-direction: row;
-  height: 100%;
-  width: 100%;
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* height: 100%; */
+  /* width: 100%; */
 }
 .projectCardContainer {
-  margin: 5%;
+  /* margin: 5%;
   display: flex;
-  align-items: center;
+  align-items: center; */
+}
+
+.project_header {
+  /* padding-top: 64px; */
+  padding-bottom: 64px;
+  padding-left: 20px;
 }
 
 .thumb-box {
-  display: flex;
+  /* display: flex;
   max-width: 33.3333%;
   margin: 0 15px;
-  position: relative;
+  position: relative; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .thumb-box a {
@@ -96,86 +105,4 @@
   max-height: 100px;
   margin-top: 5px;
   transition: opacity 0.4s ease-out, max-height 0.9s ease-out;
-}
-
-/*
-##Device = Desktops
-##Screen = 1281px to higher resolution desktops
-##Device = 데스크탑
-##Screen = 1281px 이상 해상도 데스크탑
-*/
-
-@media (min-width: 1281px) {
-}
-
-/*
-  ##Device = Laptops, Desktops
-  ##Screen = B/w 1025px to 1280px
-  ##Device = 랩탑, 데스크탑
-  ##Screen = 1025px에서 1280px 사이
-  */
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-}
-
-/*
-  ##Device = Tablets, Ipads (portrait),
-  ##Screen = B/w 768px to 1024px
-  ##Device = 태블릿, 아이패드(세로),
-  ##Screen = 768px에서 1024px 사이
-  */
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .projectCardContainer {
-    flex-direction: column;
-  }
-  .thumb-box {
-    /* margin: 10%; */
-    padding: 12px;
-    /* flex: 1; */
-  }
-}
-
-/*
-  ##Device = Tablets, Ipads (landscape)
-  ##Screen = B/w 768px to 1024px
-  ##Device = 태블릿, 아이패드(가로)
-  ##Screen = 768px에서 1024px 사이
-  */
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  .projectCardContainer {
-    flex-direction: column;
-  }
-  .thumb-box {
-    /* margin: 10%; */
-    padding: 12px;
-    /* flex: 1; */
-  }
-}
-
-/*
-  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-  ##Screen = B/w 481px to 767px
-  ##Device = 저해상도 태블릿, 모바일(가로)
-  ##Screen = 481px에서 767px 사이
-  */
-
-@media (min-width: 481px) and (max-width: 767px) {
-  .projectCardContainer {
-    flex-direction: column;
-  }
-}
-
-/*
-  ##Device = Most of the Smartphones Mobiles (Portrait)
-  ##Screen = B/w 320px to 479px
-  ##Device = 대부분의 스마트폰 모바일 기기(세로)
-  ##Screen = 320px에서 479px 사이
-  */
-
-@media (min-width: 320px) and (max-width: 480px) {
-  .projectCardContainer {
-    flex-direction: column;
-  }
 }
