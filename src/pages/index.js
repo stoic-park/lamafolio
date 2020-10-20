@@ -51,7 +51,7 @@ const IndexPage = () => (
               <MdEmail size="32" />
             </a>
           </li>
-          {/* <li>
+          <li>
             <span className="homeLinkTitle">resume</span>
             <Link
               to="https://sharebook-gifs.s3.ap-northeast-2.amazonaws.com/%EB%B0%95%EC%84%B1%ED%83%9D_%EC%9D%B4%EB%A0%A5%EC%84%9C.pdf"
@@ -59,7 +59,7 @@ const IndexPage = () => (
             >
               <FaFilePdf size="32" />
             </Link>
-          </li> */}
+          </li>
         </ul>
       </div>
       <div className="homeRightContainer"></div>
