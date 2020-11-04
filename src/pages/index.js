@@ -54,7 +54,7 @@ const IndexPage = () => (
           <li>
             <span className="homeLinkTitle">resume</span>
             <Link
-              to="https://sharebook-gifs.s3.ap-northeast-2.amazonaws.com/%EB%B0%95%EC%84%B1%ED%83%9D_%EC%9D%B4%EB%A0%A5%EC%84%9C.pdf"
+              to="https://sharebook-gifs.s3.ap-northeast-2.amazonaws.com/%EC%9B%B9+%EA%B0%9C%EB%B0%9C%EC%9E%90_%EB%B0%95%EC%84%B1%ED%83%9D.pdf"
               target="_blank"
             >
               <FaFilePdf size="32" />
