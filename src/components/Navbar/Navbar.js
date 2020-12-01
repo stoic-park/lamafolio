@@ -16,6 +16,7 @@ const Navigation = styled.nav`
   border-bottom: 2px solid #33333320;
   margin: 0 auto;
   padding: 0 2vw;
+  // padding-left: 5vw;
   z-index: 2;
   align-self: center;
 
@@ -26,6 +27,7 @@ const Navigation = styled.nav`
     left: 0;
     right: 0;
     left: 0;
+    padding-left: 5vw;
   }
 `
 
@@ -33,7 +35,7 @@ const Toggle = styled.div`
   display: none;
   height: 100%;
   cursor: pointer;
-  padding: 0 10vw;
+  padding: 0 5vw;
 
   @media (max-width: 768px) {
     display: flex;
@@ -52,7 +54,7 @@ const Navbox = styled.div`
     width: 100%;
     justify-content: flex-start;
     padding-top: 10vh;
-    background-color: #fff;
+    background-color: black;
     transition: all 0.3s ease-in;
     top: 8vh;
     left: ${props => (props.open ? "-100%" : "0")};
@@ -60,7 +62,8 @@ const Navbox = styled.div`
 `
 
 const Hamburger = styled.div`
-  background-color: #111;
+  background-color: white;
+  // margin-left: 30px;
   width: 30px;
   height: 3px;
   transition: all 0.3s linear;
